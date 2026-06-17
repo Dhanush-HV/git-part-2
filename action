@@ -1,0 +1,10 @@
+---
+- name: insatall httpd server
+  hosts: all
+  become: yes
+
+  task:
+    - name: install httpd server
+      yum:
+        name: install httpd server
+        state: prsesent
